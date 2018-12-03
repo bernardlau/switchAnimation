@@ -1,6 +1,9 @@
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css" />
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="moveController.js"></script>
+  <audio id="switchClick" src="switchClick.mp3" preload="auto"></audio>
 </head>
 <body>
   <div class='container'>
@@ -21,15 +24,17 @@
       <div class='screen-play'></div>
       <div class='actual-screen'></div>
     </div>
-    <div class='right-joycon'>
-      <div class='right-bumper'></div>
-      <div class='plus'></div>
-      <div class='right-joystick'></div>
-      <div class='Y'></div>
-      <div class='X'></div>
-      <div class='B'></div>
-      <div class='A'></div>
-      <div class='home'></div>
+    <div id='move-container'>
+      <div id='right-joycon'>
+        <div class='right-bumper'></div>
+        <div class='plus'></div>
+        <div class='right-joystick'></div>
+        <div class='Y'></div>
+        <div class='X'></div>
+        <div class='B'></div>
+        <div class='A'></div>
+        <div class='home'></div>
+      </div>
     </div>
 </div>
 </body>

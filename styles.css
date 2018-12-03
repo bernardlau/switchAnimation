@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.left-joycon, .screen, .right-joycon, .volume-down, .volume-up, .shadow {
+.left-joycon, .screen, #right-joycon, .volume-down, .volume-up, .shadow, #move-container {
   position: absolute;
 }
 .screen {
@@ -74,11 +74,18 @@ body {
   border-radius: 9vmin 0 0 9vmin;
   box-shadow: 1vmin 1vmin 0 0 rgba(0, 195, 227, 0.2);
 }
-.right-joycon {
+#move-container {
   top: 50%;
-  background: #ff4554;
   margin-top: -25vmin;
   margin-left: 57.9vmin;
+  width: 15vmin;
+  height: 49.5vmin;
+  /* background: black; */
+}
+#right-joycon {
+  top: 50%;
+  background: #ff4554;
+  margin-top: -40vmin;
   width: 15vmin;
   height: 49.5vmin;
   border-radius: 0 9vmin 9vmin 0;
